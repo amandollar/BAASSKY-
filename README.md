@@ -1,5 +1,5 @@
 # BAASSKY-
-Purpose:BAASSKY🧸 is the utimate basket fro you web components.
+Purpose:BAASSKY🧸 is the utimate basket for you web components.
 
 Aim:BAASSKY🧸 is a collaborative, open-source project dedicated to simplifying web development and promoting community involvement. Our goal is to provide a comprehensive library of reusable web components that enable developers to build applications more efficiently and consistently. We welcome contributions from developers of all backgrounds and experience levels, fostering a supportive environment where ideas can be shared and skills can be honed. Join us in shaping the future of web development with BAASSKY🧸!
 
