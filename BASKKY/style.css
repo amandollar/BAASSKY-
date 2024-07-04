@@ -35,7 +35,10 @@ header{
 .logo img {
   width: 50px; 
   height: auto;
+  justify-self: start;
+  align-self: flex-start;
 }
+
 .nav-bar .toggle-btn{
   color: #9e06b3;
   font-size: 1.5rem;
@@ -45,6 +48,17 @@ header{
 .nav-bar .links{
   display: flex;
   gap: 2rem;
+}
+
+.nav-bar .links a
+{
+  text-decoration: none;
+  color: #e06c9f;
+  font-family: Lato;
+}
+.nav-bar .links a:hover
+{
+  text-decoration: underline;
 }
 
 
@@ -262,18 +276,18 @@ li {
   margin-top: 210px;
   display:flex;
   justify-content: center;
-  
 
 }
 
+
 .search-box{
-  width: 300px;
+  width: 350px;
   height: 30px;
   margin-right: 5px;
   border-radius: 15px;
-  padding: 5px;
+  padding: 1.2em;
   border: none;
-  outline: 1px solid red;
+  outline: 2px solid #f283b6;
 }
 
 
@@ -283,6 +297,7 @@ li {
 }
 
 .search-icon:hover{
+  transform-origin: bottom;
   transform: scale(1.1);
   cursor: pointer;
 }
