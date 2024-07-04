@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url('https://images.unsplash.com/photo-1719317574403-361227ad1a4a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+
+}
+.c-container{
+    display: flex;
+    color: white;
+    text-align: left;
+    width: 30%;
+    padding: 40px;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border: 1px solid #969393;
+    position: absolute;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+form .input-sec{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-sec input,textarea{
+    width: 90%;
+    height: 80%;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    margin: 5px 0 5px;
+    padding: 23px 9px 8px 25px;
+    
+}
+
+.input-sec input::placeholder{
+    color: white;
+    font-size: 14px;
+    font-weight: 452;
+    
+}
+.input-sec textarea:focus,input:focus{
+    border-color: #d0d015;
+}
+.contact-content{
+    margin-top: 20vh;
+    font-size: 25px;
+}
+
+.contact-content h1{
+    color: #000;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.contact-content p{
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 13px;
+}
+
+.btn{
+    margin-top: 10px;
+    width: 200px;
+    height: 60px;
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: yellow;
+    background-color: rgb(18, 18, 17);
+    border: 2px solid white;
+}
