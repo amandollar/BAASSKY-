@@ -256,6 +256,37 @@ li {
   }
 }
 
+
+.search-bar{
+  position: relative;
+  margin-top: 210px;
+  display:flex;
+  justify-content: center;
+  
+
+}
+
+.search-box{
+  width: 300px;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 15px;
+  padding: 5px;
+  border: none;
+  outline: 1px solid red;
+}
+
+
+.search-icon{
+  background-color:transparent;
+  border: none;
+}
+
+.search-icon:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 @media (max-width: 900px) {
   .nav-bar .links,
   .links a{
@@ -271,6 +302,8 @@ li {
   }
 
 }
+
+
 
 @media (max-width: 480px) {
   .sidebar {

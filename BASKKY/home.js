@@ -1,16 +1,11 @@
-$(document).ready(() => {
-  console.log("Hola");
-});
+const toggleBtn = document.querySelector(".toggle-btn");
+const toggleBtnIcon = document.querySelector(".toggle-btn i");
+const dropDownMenu = document.querySelector(".dropdown");
 
-const toggleBtn = $(".toggle-btn");
-const toggleBtnIcon = $(".toggle-btn i");
-const dropDownMenu = $(".dropdown");
+toggleBtn.addEventListener("click", () => {
+  dropDownMenu.classList.toggle("open");
+  const isOpen = dropDownMenu.classList.contains("open");
 
-toggleBtn.on("click", () => {
-  dropDownMenu.toggleClass("open");
-  const isOpen = dropDownMenu.hasClass("open");
-
-  toggleBtnIcon
-    .removeClass("fa-xmark fa-bars")
-    .addClass(isOpen ? "fa-xmark" : "fa-bars");
+  toggleBtnIcon.classList.remove("fa-xmark", "fa-bars");
+  toggleBtnIcon.classList.add(isOpen ? "fa-xmark" : "fa-bars");
 });
