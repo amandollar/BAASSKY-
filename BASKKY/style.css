@@ -21,12 +21,13 @@ header{
   right: 0;
   z-index: 1000;
   position: fixed;
-  padding: 0 2rem;
+  padding: 0rem 1rem;
+  width: 100%;
 }
 .nav-bar{
-  width: 100%;
+  width: 98%;
   height: 60px;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -35,8 +36,6 @@ header{
 .logo img {
   width: 50px; 
   height: auto;
-  justify-self: start;
-  align-self: flex-start;
 }
 
 .nav-bar .toggle-btn{
@@ -49,8 +48,11 @@ header{
   display: flex;
   gap: 2rem;
 }
-
-.nav-bar .links a
+.dropdown
+{
+  background-color: antiquewhite;
+}
+.dropdown a, .nav-bar .links a
 {
   text-decoration: none;
   color: #e06c9f;
@@ -288,6 +290,7 @@ li {
   padding: 1.2em;
   border: none;
   outline: 2px solid #f283b6;
+  text-align: center;
 }
 
 
@@ -314,6 +317,10 @@ li {
   .dropdown{
       /* position: fixed; */
       display: block;
+  }
+  .dropdown
+  {
+    background-color: antiquewhite;
   }
 
 }
