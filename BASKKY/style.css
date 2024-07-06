@@ -110,6 +110,8 @@ li {
 .hero img{
   position: absolute;
   height: 100svh;
+  width: 100vw;
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -122,18 +124,6 @@ li {
 }
 
 .sign {
-  /* position: absolute;   */
-  /* display: flex;  */
-  /* justify-content: center;  */
-  /* align-items: center;  */
-  /* width: 100%;  */
-  /* height: 100%;   */
-  /* transform: translate(-50%, -50%);   */
-  /* letter-spacing: 2;  */
-  /* left: 50%;  */
-  /* top: 50%;   */
-  /* font-family: "Clip";  */
-  /* text-transform: uppercase;  */
   font-size: 6em;  
   color: #ffe6ff;  
   text-shadow: 
@@ -355,7 +345,6 @@ li {
 #backgrounds {
   padding:50px 10% ;
   background-color: #020030;
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
