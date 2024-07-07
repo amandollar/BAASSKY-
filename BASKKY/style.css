@@ -117,7 +117,9 @@ li {
 
 .tagline{
   margin: 40px;
-  font-size: 50px;
+}
+.tagline p{
+  font-size: max(2.3dvw ,20px);
   font-weight: 900;
   color: white; 
   text-shadow: 0 0 18px #4b0621;
@@ -342,7 +344,7 @@ li {
 }
 
 /* ____________ MAIN CONTENT_______________ */
-#backgrounds {
+#backgrounds , #buttons, #forms{
   padding:50px 10% ;
   background-color: #020030;
   display: flex;
@@ -354,15 +356,19 @@ li {
   justify-content: space-around;
 }
 .template{
-  border: 1px solid #6b1839;
-  padding: 20px;
+  border: 1px solid #c8c5f8;
+  background-color: #c8c5f8;
   border-radius: 1rem;
-  width: 300px; 
+  width: 320px; 
   margin: 20px;
   text-align: center;
-  color: #ffffff; 
+  transition: 300ms;
 }
-#backgrounds h2{
+.template:hover{
+  box-shadow:0 0 20px #e06c9f;
+
+}
+#backgrounds h2, #buttons h2, #forms h2{
   padding: 40px 0;
   font-size: 40px;
   color: white;
@@ -370,14 +376,14 @@ li {
 
 .template img {
   width: 100%;
-  max-height: 200px; /* Limit image height */
+  max-height: 200px; 
   object-fit: cover;
-  border-radius: 8px; /* Rounded corners */
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
 }
-
 .template p {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
 }
 .template .btn{
@@ -386,34 +392,36 @@ li {
   justify-content: center;
   gap: 15px;
   height: 35px;
-  
+  margin: 10px;  
 }
 .template .btn a{
+  font-size: 15px;
+  color: rgb(18, 18, 136);
   padding: 2px 13px;
   border-radius: 50rem;
-  background-color: #3f51b5;
-  color: white;
+  border:1px solid  #e06c9f;
   text-decoration: none;
   transition: background-color 0.3s ease;
 
 }
 .template .btn a:hover{
   background-color: #e91e63;
-
+  color: white;
+  
 }
 .view-more {
   display: block;
   width: 200px;
-  margin: 20px auto; /* Centers the button horizontally */
+  margin: 20px auto;
   padding: 12px 20px;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
-  border-radius: 25px; /* Rounded rectangle */
-  background-color: #3f51b5; /* Blue color */
+  border-radius: 25px;
+  background-color: #3f51b5;
   transition: background-color 0.3s ease;
 }
 
 .view-more:hover {
-  background-color: #e91e63; /* Pink color on hover */
+  background-color: #e91e63; 
 }
