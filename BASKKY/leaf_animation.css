@@ -1,20 +1,4 @@
 :root {
-    --leaf-color1: #309900;
-    --leaf-color2: #005600;
-    --leaf-color3: #5e9900;
-    --leaf-color4: #2b5600;
-    --leaf-color5: #999900;
-    --leaf-color6: #564500;
-    --background-color: #222;
-
-    --soft-pink: #FADCD9;
-    --light-purple: #E6B3E9;
-    --deep-pink: #FF65BD;
-    --bright-white: #FFFFFF;
-    --pale-purple: #D6A4D0;
-    --dark-purple: #6B1839;
-
-
         --leaf-color1: #D6A4D0;
         --leaf-color2: #ea00ff;
         --leaf-color3: #E6B3E9;
@@ -240,7 +224,3 @@
         opacity: 0;
     }
 }
-
-
-
-

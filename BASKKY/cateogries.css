@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 5%;
+    font-family: "Comic Sans MS", cursive;
+    background: conic-gradient(  #020030, pink);
+    color: #fff;
+    height: 100svh;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: #060166; 
+}
+
+.search-bar {
+    height: 250px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchInput {
+    width: 300px;
+    height: 25px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2rem;
+    margin-right: 10px;
+}
+
+#searchButton {
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 2rem;
+    margin-right: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#searchButton img {
+    width: 20px;
+    height: 20px;
+}
+
+.components {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.component {
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    justify-content: space-evenly;
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 25px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+
+.component:hover {
+    transform: scale(1.05);
+    box-shadow:0 0 50px #e06c9f;
+    background-color: #bb5c85;
+    border: 0.5px solid white;
+}
+
+.component img{
+    filter: invert(49%) sepia(26%) saturate(5113%) hue-rotate(182deg) brightness(103%) contrast(105%);
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.component p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #87ceeb;
+}
