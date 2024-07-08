@@ -13,5 +13,5 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     // Add initial cards if needed
-    // createCard("/Components/Buttons/assets/blob-btn.png", "Blob Button", "/Components/Buttons/Blob Button/index.html");
+    // eg --> createCard("/Components/Buttons/assets/blob-btn.png", "Blob Button", "/Components/Buttons/Blob Button/index.html");
 });
