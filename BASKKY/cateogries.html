@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Search</title>
+    <link rel="stylesheet" href="cateogries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title">CATEGORIES</h1>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for components" id="searchInput">
+            <button id="searchButton"><img src="Images/search.svg" alt="Voice Search"></button>
+        </div>
+        <div class="components">
+            <a href="cateogries/backgrounds.html" class="component">
+                <img src="Images/background.svg">
+                <p>Backgrounds</p>
+            </a>
+            <a href="cateogries/buttons.html" class="component">
+                <img src="Images/buttons.svg">
+                <p>Buttons</p>
+            </a>
+            <a href="cateogries/forms.html" class="component">
+                <img src="Images/forms.svg">
+                <p>Forms</p>
+            </a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('searchButton').addEventListener('click', () => {
+    const searchInput = document.getElementById('searchInput').value;
+    alert(`You searched for: ${searchInput}`);
+});
+
+    </script>
+</body>
+</html>

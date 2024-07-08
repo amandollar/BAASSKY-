@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Website</title>
+    <link rel="stylesheet" href="cateogries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <h3>✨ Categories</h3>
+                <a href="#">Get Started with BAASSKY</a>
+                <a href="backgrounds.html" class="active">Backgrounds</a>
+                <a href="buttons.html">Buttons</a>
+                <a href="forms.html">Forms</a>
+                <a href="#">Billing</a>
+                <a href="#">Effects</a>
+                <a href="#">Baassky Editor</a>
+                <a href="#">Animations</a>
+                <a href="#">Plugins</a>
+                <a href="#">Glossary</a>
+            </nav>
+
+        </aside>
+        <main>
+            <h1>CONTENTS</h1>
+            <div class="content">
+                <!-- templates are added here using JS -->
+            </div>
+        </main>
+    </div>
+    <script src="cateogries.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            createCard("/Components/Backgrounds/assets/wave.png", "Dot-Wave-Background", "/Components/Backgrounds/Dot-Wave-Background/index.html");
+            createCard("/Components/Backgrounds/assets/gradient.png", "Gradient Background", "/Components/Backgrounds/Gradient-Background/index.html");
+            createCard("/Components/Backgrounds/assets/screensaver.png", "Screensaver Background", "/Components/Backgrounds/Screensaver-Background/index.html");
+        });
+    </script>
+
+</body>
+
+</html>
