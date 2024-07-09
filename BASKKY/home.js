@@ -10,6 +10,8 @@ toggleBtn.addEventListener("click", () => {
   toggleBtnIcon.classList.add(isOpen ? "fa-xmark" : "fa-bars");
 });
 
+
+
 document.addEventListener('scroll', () => {
   const header = document.querySelector("header");
   const logoLink = document.querySelector(".logo a");
