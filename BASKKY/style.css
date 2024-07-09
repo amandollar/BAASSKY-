@@ -352,6 +352,11 @@ main{
   display: flex;
   flex-direction: column;
 }
+section h2{
+  /* font-family: Arial, sans-serif; */
+  font-family: "Cinzel Decorative", serif;
+
+}
 .contents{
   display: flex;
   flex-wrap: wrap;
