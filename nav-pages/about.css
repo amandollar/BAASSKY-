@@ -1,0 +1,121 @@
+body {
+    font-family: "Cinzel Decorative", serif;
+    background-color: #fce1e5;
+    margin: 0;
+    padding: 0;
+    height: max-content;
+}
+
+.about-container {
+    padding: 5%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #5d0092;
+}
+
+.about-section {
+    background: linear-gradient(0deg, #fae4e7 0%, #ffecef);
+    border: 0.5px solid #ffffff;
+    border-radius: 3.5rem;
+    padding: 5%;
+    min-height: 56vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 90px;
+    box-shadow: 0 10px 50px #ff697d6b;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #00005a;
+    border-bottom: 1px solid #ff697daf;
+    padding-bottom: 10px;
+    margin-bottom: 4%;
+}
+
+.about-section p {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #000000;
+    margin: 20px 0;
+    word-spacing: 7px;
+    max-width: 1000px;
+}
+
+.team-members {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap:50px;
+}
+
+.team-header {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.team-header p {
+    font-size: 1.03rem;
+    color: #000000;
+}
+
+.team {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+.member img {
+    background-color: #8f8f8f;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 25px;
+}
+
+.member div {
+    display: flex;
+    flex-direction: column;
+}
+
+.member h3 {
+    margin: 7px 0 0 0;
+    font-size: 1.2rem;
+    color: #9e2b46;
+}
+
+.member p {
+    font-size: 0.9rem;
+    color: #000000;
+    margin: 0;
+}
+@media (max-width : 750px) {
+    .team-members{
+        flex-direction: column;
+    }
+    .about-section p{
+        font-size: 1rem;
+    }
+    .about-section h2{
+        font-size: 1.5rem;
+    }
+}

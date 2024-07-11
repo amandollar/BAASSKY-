@@ -10,123 +10,43 @@ body {
 }
 
 
-
-/* nav bar */
-header{
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  position: fixed;
-  padding: 0rem 1rem;
-  width: 100%;
-}
-.nav-bar{
-  width: 98%;
-  height: 60px;
-  /* max-width: 1200px; */
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo img {
-  width: 50px; 
-  height: auto;
-}
-
-.nav-bar .toggle-btn{
-  color: #9e06b3;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
-}
-.nav-bar .links{
-  display: flex;
-  gap: 2rem;
-}
-.dropdown
-{
-  background-color: antiquewhite;
-}
-.dropdown a, .nav-bar .links a
-{
-  text-decoration: none;
-  color: #e06c9f;
-  font-family: Lato;
-}
-.nav-bar .links a:hover
-{
-  text-decoration: underline;
-}
-
-
-header {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #fadcd9;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
-  position: relative; 
-  z-index: 1; 
-}
-/* DROPDOWN */
-.dropdown
-{
-  display: none;
-  position: absolute;
-  right: 2rem;
-  top: 60px;
-  height: 0;
-  width: 300px;
-  background: rgba(0, 0, 0, 0.999);
-  backdrop-filter: blur(15px);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.dropdown.open
-{
-  height: auto;
-}
-.dropdown li
-{
-  padding: 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-li {
-  list-style: none;
-}
-
-
 /* _______HERO SECTION_________ */
 .hero{
+  cursor: default;
   height: 100vh;
   display: flex;
-  flex-direction: column  ;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 .hero img{
-  position: absolute;
+  position: relative;
   height: 100svh;
   width: 100vw;
   object-fit: cover;
   z-index: -1;
+  object-position: bottom;
 }
-
-.tagline{
-  margin: 40px;
+.hero .heading{
+  position: absolute;
+  Top: 28%;
+  left: 10%;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 }
 .tagline p{
+  font-family: "Jersey 10 Charted", sans-serif; 
   font-size: max(2.3dvw ,20px);
-  font-weight: 900;
   color: white; 
-  text-shadow: 0 0 18px #4b0621;
+  font-size: 50px;
+  text-shadow: 0 2px 8px #BD529D;
 }
 
 .sign {
-  font-size: 6em;  
+  font-family: "Rubik Lines", "Monoton";
+  letter-spacing: 5px;
+  font-size: 6.3em;  
   color: #ffe6ff;  
   text-shadow: 
     0 0 0.6rem #ffe6ff,
@@ -280,69 +200,6 @@ li {
   }
 }
 
-
-.search-bar{
-  position: absolute;
-  top: 90px;
-  right: 40px;
-}
-
-
-.search-box{
-  width: 350px;
-  height: 30px;
-  margin-right: 5px;
-  border-radius: 15px;
-  padding: 1.2em;
-  border: none;
-  outline: 2px solid #f283b6;
-  text-align: center;
-}
-
-
-.search-icon{
-  background-color:transparent;
-  border: none;
-}
-
-.search-icon:hover{
-  transform-origin: bottom;
-  transform: scale(1.1);
-  cursor: pointer;
-}
-
-@media (max-width: 900px) {
-  .nav-bar .links,
-  .links a{
-      display: none;
-  }
-  .nav-bar .toggle-btn{
-      /* position: fixed; */
-      display: block;
-  }
-  .dropdown{
-      /* position: fixed; */
-      display: block;
-  }
-  .dropdown
-  {
-    background-color: antiquewhite;
-  }
-
-}
-
-
-
-@media (max-width: 480px) {
-  .sidebar {
-    width: 100%;
-  }
-  
-  .sign {
-    font-size: 4em; 
-  }
-}
-
 /* ____________ MAIN CONTENT_______________ */
 main{
   background: linear-gradient(0deg, pink 0%,#556fff 50%, #020030 100%);
@@ -351,6 +208,10 @@ main{
   padding:50px 10% ;
   display: flex;
   flex-direction: column;
+}
+section h2{
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 500;
 }
 .contents{
   display: flex;

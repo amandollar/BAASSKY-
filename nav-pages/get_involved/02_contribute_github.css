@@ -1,0 +1,64 @@
+
+.contribute {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contribute h1, .contribute h2, .contribute h3 {
+    text-align: center;
+    color: #333;
+}
+
+.contribute p {
+    text-align: center;
+    color: #555;
+}
+
+.contributors .featured, .contributors .recent-contributors {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.contributor {
+    flex: 1;
+    max-width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.contributor img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.how-to-contribute {
+    margin: 40px 0;
+}
+
+.how-to-contribute p, .how-to-contribute ul {
+    margin: 20px 0;
+}
+
+.how-to-contribute ul {
+    list-style: disc;
+    padding-left: 40px;
+}
+
+.start-contributing {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-contributing:hover {
+    background-color: rgb(186, 0, 223);
+}

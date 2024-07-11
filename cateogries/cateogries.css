@@ -17,6 +17,8 @@ body {
     width: 300px;
     background-color: #00000046;
     padding: 20px;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 nav {

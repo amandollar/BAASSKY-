@@ -10,6 +10,7 @@ toggleBtn.addEventListener("click", () => {
   toggleBtnIcon.classList.add(isOpen ? "fa-xmark" : "fa-bars");
 });
 
+
 document.addEventListener("DOMContentLoaded", function() {
   function createCard(previewImage, heading, previewPath, sectionSelector) {
     let html = `
@@ -25,13 +26,13 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // add templates here--> 
-  createCard("/Components/Backgrounds/assets/wave.png", "Dot-Wave-Background", "/Components/Backgrounds/Dot-Wave-Background/index.html", "#backgrounds");
-  createCard("/Components/Backgrounds/assets/gradient.png", "Gradient Background", "/Components/Backgrounds/Gradient-Background/index.html", "#backgrounds");
-  createCard("/Components/Backgrounds/assets/screensaver.png", "Screensaver Background", "/Components/Backgrounds/Screensaver-Background/index.html", "#backgrounds");
+  createCard("../Components/Backgrounds/assets/wave.png", "Dot-Wave-Background", "../Components/Backgrounds/Dot-Wave-Background/index.html", "#backgrounds");
+  createCard("../Components/Backgrounds/assets/gradient.png", "Gradient Background", "../Components/Backgrounds/Gradient-Background/index.html", "#backgrounds");
+  createCard("../Components/Backgrounds/assets/screensaver.png", "Screensaver Background", "../Components/Backgrounds/Screensaver-Background/index.html", "#backgrounds");
   
-  createCard("/Components/Buttons/assets/blob-btn.png", "Blob Button", "/Components/Buttons/Blob Button/index.html", "#buttons");
-  createCard("/Components/Buttons/assets/liquid-btn.png", "Liquid button", "/Components/Buttons/Liquid Button/index.html", "#buttons");
+  createCard("../Components/Buttons/assets/blob-btn.png", "Blob Button", "../Components/Buttons/Blob Button/index.html", "#buttons");
+  createCard("../Components/Buttons/assets/liquid-btn.png", "Liquid button", "../Components/Buttons/Liquid Button/index.html", "#buttons");
 
-  createCard("/Components/form/contact_form/assets/image.png", "Contact page", "/Components/form/contact_form/contact.html", "#forms");
+  createCard("../Components/form/contact_form/assets/image.png", "Contact page", "../Components/form/contact_form/contact.html", "#forms");
   
 });
