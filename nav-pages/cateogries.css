@@ -1,13 +1,15 @@
 body {
     margin: 0;
     box-sizing: border-box;
-    padding: 5%;
     font-family: "Comic Sans MS", cursive;
     background: conic-gradient(  #020030, pink);
     color: #fff;
     height: 100svh;
 }
+main{
+    padding: 5%;
 
+}
 .container {
     text-align: center;
 }

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+color: white;
+}
+.main-nav-bar {
+    background-color:rgb(35, 0, 63);
+    padding: 200px 10px 0 0;
+    text-align: center;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav-bar ul li {
+    margin: 0 15px;
+}
+
+.main-nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-nav-bar ul li a:hover,
+.main-nav-bar ul li a.active {
+    text-decoration: underline;
+}
