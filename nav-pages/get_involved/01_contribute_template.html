@@ -11,7 +11,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -28,7 +29,8 @@
             <ul class="links">
                 <li><a href="../../nav-pages/cateogries.html">Categories</a></li>
                 <li><a href="../../nav-pages/services.html">Services</a></li>
-                <li  class="active"><a href="../../nav-pages/get_involved/01_contribute_template.html">Get Involved</a></li>
+                <li class="active"><a href="../../nav-pages/get_involved/01_contribute_template.html">Get Involved</a>
+                </li>
                 <li><a href="../../nav-pages/about.html">About</a></li>
             </ul>
             <div class="toggle-btn">
@@ -39,47 +41,123 @@
         <div class="dropdown">
             <li><a href="../../nav-pages/cateogries.html">Categories</a></li>
             <li><a href="../../nav-pages/services.html">Services</a></li>
-            <li  class="active"><a href="../../nav-pages/get_involved/01_contribute_template.html">Get Involved</a></li>
+            <li class="active"><a href="../../nav-pages/get_involved/01_contribute_template.html">Get Involved</a></li>
             <li><a href="../../nav-pages/about.html">About</a></li>
         </div>
     </header>
 
     <main>
+
         <div class="main-nav-bar">
-            <h1>Get Involved with Baassskyy</h1>
+            <div class="area">
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <h1>GET INVOLVED WITH BAASSKYY</h1>
             <ul>
-                <li class="active"><a href="01_contribute_template.html">Contribute Templates</a></li>
+                <li class="clicked"><a href="01_contribute_template.html">Contribute Templates</a></li>
                 <li><a href="02_contribute_github.html   ">Contribute to Open Source</a></li>
                 <li><a href="03_contact.html">Contact</a></li>
             </ul>
         </div>
-        
+
         <section class="contribute">
-            <h1>Contribute Templates</h1>
-            <p>Help us grow our collection of templates by submitting your own designs. Whether it's a simple layout or a complex component, your contributions are valuable to our community.</p>
-            
-            <div class="upload-section">
+            <div class="heading">
                 <h2>Submit Your Template</h2>
+                <p>Help us grow our collection of templates by submitting your own designs. Whether it's a simple layout
+                    or a complex component, Your contributions are valuable to the company.</p>
+            </div>
+            <div class="upload-section">
                 <form action="upload_template.php" method="post" enctype="multipart/form-data">
-                    <label for="template-name">Template Name:</label>
-                    <input type="text" id="template-name" name="template_name" required>
+                    <div class="form-left">
+                        <p>Upload code files:</p>
+                        <label for="template-file" class="file-upload">
+                            <input type="file" class="file-upload" id="template-file" name="template_file"
+                                accept=".zip,.rar,.7zip" required>
+                            <span>+ Drag and Drop or Browse</span>
+                        </label>
+                        <p>Upload screenshot:</p>
+                        <label for="screenshot" class="file-upload">
+                            <input type="file" class="file-upload" id="screenshot" name="screenshot" accept="image/*"
+                                required>
+                            <span>+ Drag and Drop or Browse</span>
+                        </label>
+                    </div>
 
-                    <label for="template-description">Description:</label>
-                    <textarea id="template-description" name="template_description" required></textarea>
+                    <div class="form-right">
+                        <label for="template-name">Title:</label>
+                        <input type="text" id="template-name" name="template_name" required>
 
-                    <label for="template-file">Upload Template File:</label>
-                    <input type="file" id="template-file" name="template_file" accept=".zip,.rar,.7zip" required>
+                        <label for="template-description">Description:</label>
+                        <textarea id="template-description" name="template_description" required></textarea>
 
-                    <label for="screenshot">Upload Screenshot:</label>
-                    <input type="file" id="screenshot" name="screenshot" accept="image/*" required>
-
-                    <button type="submit" class="submit-button">Submit Template</button>
+                        <div class="tags-section">
+                            <label for="tags">Tags:</label>
+                            <div class="tags-container">
+                                <label class="tag">
+                                    <input type="checkbox" name="tags" value="Background">
+                                    <span>Background</span>
+                                </label>
+                                <label class="tag">
+                                    <input type="checkbox" name="tags" value="UI/UX">
+                                    <span>UI/UX</span>
+                                </label>
+                                <label class="tag">
+                                    <input type="checkbox" name="tags" value="Illustration">
+                                    <span>Illustration</span>
+                                </label>
+                                <label class="tag">
+                                    <input type="checkbox" name="tags" value="Motion">
+                                    <span>Motion</span>
+                                </label>
+                                <label class="tag">
+                                    <input type="checkbox" name="tags" value="Buttons">
+                                    <span>Buttons</span>
+                                </label>
+                                <label class="tag">
+                                    <input type="checkbox" name="tags" value="Web">
+                                    <span>Web</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
                 </form>
             </div>
+            <div class="extra-gap"></div>
         </section>
+
     </main>
 
     <script src="../../BASKKY/nav-bar.js"></script>
+    <script>
+        document.querySelectorAll('.form-left input[type="file"]').forEach(input => {
+            const span = input.nextElementSibling;
+
+            input.addEventListener('drop', (e) => {
+                e.preventDefault();
+                input.classList.remove('dragging');
+                span.textContent = e.dataTransfer.files[0].name;
+                input.files = e.dataTransfer.files;
+            });
+
+            input.addEventListener('change', () => {
+                span.textContent = input.files[0].name;
+            });
+        });
+
+
+    </script>
 </body>
 
 </html>
