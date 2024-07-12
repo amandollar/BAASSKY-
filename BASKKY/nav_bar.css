@@ -141,7 +141,6 @@ header.scrolled {
     color: #e91e63;
 }
 .nav-bar .links a:hover {
-    background-color: #c8c5f894;
     color: #e91e63;
 }
 
@@ -176,7 +175,9 @@ li {
 }
 
 .active a{
-    border:2px solid #e91e63;
+    /* border:2px solid #e91e63; */
+    background-color: #65ace6;
+    /* text-shadow: 0 0 5px white; */
 }
 
 @media (max-width: 900px) {

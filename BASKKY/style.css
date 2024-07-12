@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: "Comic Sans MS", cursive;
+  /* font-family: "Comic Sans MS", cursive; */
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   overflow-x: hidden;
 }
 
@@ -41,6 +42,24 @@ body {
   color: white; 
   font-size: 50px;
   text-shadow: 0 2px 8px #BD529D;
+}
+#hero-btn{
+  margin: 40px 0;
+}
+#hero-btn a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  background-color: #24224ea9;
+  border: 2.5px solid #24224e;
+  padding: 15px 40px ;
+  transition: 200ms;
+  border-radius: 3px;
+}
+#hero-btn a:hover{
+  background-color: #24224e;
+  /* border: 1.5px solid rgb(255, 215, 248); */
+  box-shadow: 3px 3px 15px #e06c9eb0;
 }
 
 .sign {
