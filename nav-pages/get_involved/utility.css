@@ -71,16 +71,6 @@ h1{
     }
 }
 
-@media (max-width: 1000px) {
-    form{
-        flex-direction: column;
-        width: 100vw;
-    }
-    .form-left, .form-right{
-        width: 65%;
-    }
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -113,36 +103,10 @@ h1{
 }
 
 /* nav-bar background animation */
-/* @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
-
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-body{
-    font-family: 'Exo', sans-serif;
-}
-
-
-.context {
-    width: 100%;
-    position: absolute;
-    top:50vh;
-    
-}
-
-.context h1{
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-} */
-
 
 .area{
     position: absolute;
     z-index: -1;
-    /* background: #4e54c8; */
     background-color:#23003f;
     
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  

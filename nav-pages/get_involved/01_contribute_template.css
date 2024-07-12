@@ -1,6 +1,6 @@
 /*animation applied here comes from utility.css */
 
-main{
+main {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -15,11 +15,11 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:50px;
+    gap: 50px;
 }
 
-.contribute .heading{
-    
+.contribute .heading {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,19 +56,33 @@ form {
     padding: 20px;
 }
 
+@media (max-width: 1000px) {
+    form {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .form-left,
+    .form-right {
+        width: 65%;
+    }
+}
+
 label {
     font-size: 1rem;
     color: #555;
     margin: 10px 0 5px;
 }
 
-.upload-section input[type="text"], .upload-section textarea, .upload-section input[type="file"] {
+.upload-section input[type="text"],
+.upload-section textarea,
+.upload-section input[type="file"] {
     box-sizing: border-box;
     width: 100%;
     padding: 12px 15px;
     margin-bottom: 20px;
     border-radius: 10px;
-    font-size: 1rem;    
+    font-size: 1rem;
     animation: slideInFromBottom 0.7s ease-in-out;
     border: 1px solid #ccc;
 }
@@ -116,7 +130,7 @@ input[type="checkbox"] {
     display: none;
 }
 
-input[type="checkbox"] + span {
+input[type="checkbox"]+span {
     border: 1px solid rgba(255, 105, 180, 0);
     border-radius: 5rem;
     padding: 5px 10px;
@@ -124,7 +138,7 @@ input[type="checkbox"] + span {
     color: #333;
 }
 
-input[type="checkbox"]:checked + span {
+input[type="checkbox"]:checked+span {
     background: rgb(255, 220, 238);
     border: 1px solid hotpink;
 }
