@@ -288,3 +288,35 @@ section h2{
 .view-more:hover {
   background-color: #e91e63; 
 }
+
+
+
+/* ____________Footer_______________ */
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background: linear-gradient(0deg, transparent, #02003060 70%);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+
+}
+
+
+
+.github-icon {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
